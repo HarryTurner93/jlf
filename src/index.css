@@ -11,3 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+p {
+  font-family: 'Lora', serif;
+  font-size: 130%;
+  color: #303030;
+}
+
+h1 {
+  font-family: 'Manrope', sans-serif;
+  color: #303030;
+}
