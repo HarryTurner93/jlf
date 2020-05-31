@@ -89,14 +89,8 @@ function App() {
                                 <p>Registered charity Number 1186526.</p>
                             </div>
                             <div className={styles.donate}>
-                                <Iframe url="https://www.youtube.com/embed/xDMP3i36naA"
-                                        width="100%"
-                                        height="350px"
-
-
-                                        display="initial"
-                                        position="relative"
-                                />
+                                <p>Please use the following PayPal link to provide donations.</p>
+                                <h3><a href="https://www.paypal.me/JuliusLFoundation">Donate to the Julius Little Foundation</a></h3>
                             </div>
                         </div>
                     </div>
@@ -105,5 +99,12 @@ function App() {
         </div>
     );
 }
+
+//<Iframe url="https://www.youtube.com/embed/xDMP3i36naA"
+//                                         width="100%"
+//                                         height="350px"
+//                                         display="initial"
+//                                         position="relative"
+//                                 />
 
 export default App;
