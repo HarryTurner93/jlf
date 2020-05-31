@@ -33,7 +33,7 @@ function App() {
                 </div>
                 <div className={styles.box_panel}>
                     <div className={styles.box}>
-                        <h1 className={styles.box_text}>Our Story</h1>
+                        <h1 className={styles.box_title}>Our Story</h1>
                         <p className={styles.box_text}>
                             This charity was set up following the death of Julius Little in June 2019. Julius was a
                             caring and compassionate young man who struggled with depression and anxiety.
@@ -43,7 +43,7 @@ function App() {
                         </p>
                     </div>
                     <div className={styles.box}>
-                        <h1 className={styles.box_text}>Our Mission</h1>
+                        <h1 className={styles.box_title}>Our Mission</h1>
                         <p className={styles.box_text}>
                             I in 4 of us gets a mental health problem, and currently there are not enough resources.
                         </p>
@@ -53,7 +53,7 @@ function App() {
                         </p>
                     </div>
                     <div className={styles.box}>
-                        <h1 className={styles.box_text}>Our Progress</h1>
+                        <h1 className={styles.box_title}>Our Progress</h1>
                         <p className={styles.box_text}>
                             Since our set-up, we have raised over £X.
                         </p>
@@ -89,7 +89,7 @@ function App() {
                                 <p>Registered charity Number 1186526.</p>
                             </div>
                             <div className={styles.donate}>
-                                <Iframe url="http://www.youtube.com/embed/xDMP3i36naA"
+                                <Iframe url="https://www.youtube.com/embed/xDMP3i36naA"
                                         width="100%"
                                         height="350px"
 

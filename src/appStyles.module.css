@@ -1,5 +1,6 @@
 .page {
     width: 90%;
+    max-width: 1600px;
     margin: auto;
 }
 
@@ -37,18 +38,22 @@
 
 .box {
     width: 28%;
-    background-color: rgba(160, 20, 20, 0.8);
+    background-color: white;
     height: 400px;
     padding: 20px;
     text-align: left;
 }
 
 .box_text {
-    color: white;
+    color: #303030;
+}
+.box_title {
+    color: rgba(200, 0, 0, 1.0);
 }
 
+
 .donate_inner {
-    width: 80%;
+    width: 100%;
     background-color: white;
     display: flex;
     flex-direction: column;
