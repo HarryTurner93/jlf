@@ -6,9 +6,8 @@ import Iframe from 'react-iframe'
 import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
-import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 
-import Logo from './jlf_logo.png';
+import pic from './j_pic.png';
 
 function App() {
     return (
@@ -16,7 +15,6 @@ function App() {
             <div className={styles.page}>
                 <div className={styles.jumbotron}>
                     <div className={styles.hello}>
-                        <h1>Hi there.</h1>
                         <h1>Welcome to the Holding Page for The Julius Little Foundation website.</h1>
                         <p>
                             We are a newly registered charity, our goal is to support young people in distress
@@ -28,37 +26,43 @@ function App() {
                         </p>
                     </div>
                     <div className={styles.logo}>
-                        <img className={styles.image} src={Logo} alt='Logo'/>
                     </div>
                 </div>
                 <div className={styles.box_panel}>
-                    <div className={styles.box}>
+                    <div className={styles.box} style={{backgroundColor: '#fbe5d6'}}>
                         <h1 className={styles.box_title}>Our Story</h1>
                         <p className={styles.box_text}>
-                            This charity was set up following the death of Julius Little in June 2019. Julius was a
-                            caring and compassionate young man who struggled with depression and anxiety.
+                            This charity has been set up in the memory of Julius Little; a caring, compassionate and perhaps most importantly to him an artist and fashion icon.
                         </p>
                         <p className={styles.box_text}>
-                            The Julius Little Foundation was created to help others like him.
+                            Julius himself suffered with anxiety and depression and sadly took his own life in June 2019, aged 20.
+                        </p>
+                        <p className={styles.box_text}>
+                            His family created the foundation in order to help those struggling with mental illness just like Julius did.
                         </p>
                     </div>
-                    <div className={styles.box}>
+                    <div className={styles.box} style={{backgroundColor: '#dae3f3'}}>
                         <h1 className={styles.box_title}>Our Mission</h1>
                         <p className={styles.box_text}>
-                            I in 4 of us gets a mental health problem, and currently there are not enough resources.
+                            The statistics are bleak, I in 4 of us will suffer with a mental health problem this year and there are not currently enough resources available to help each of us.
                         </p>
                         <p className={styles.box_text}>
-                            We are here to help by providing a free, confidential, safe space for you to explore and
-                            discuss anything troubling you.
+                            Our young people face more and more challenges to their mental health and not everyone is receiving the support they need.
+                        </p>
+                        <p className={styles.box_text}>
+                            We are here to help by providing young people a free, confidential, safe space to explore and discuss any troubles with trained mental health professionals.
                         </p>
                     </div>
-                    <div className={styles.box}>
+                    <div className={styles.box} style={{backgroundColor: '#e1e6ea'}}>
                         <h1 className={styles.box_title}>Our Progress</h1>
                         <p className={styles.box_text}>
-                            Since our set-up, we have raised over £X.
+                            The support we have received so far has been amazing! We thank everyone who has donated or given up their time fundraising and volunteering!
                         </p>
                         <p className={styles.box_text}>
-                            We are now in the process of setting up these counselling services.
+                            Almost a year has passed since loosing our beloved Julius and we have achieved so much during this difficult time.
+                        </p>
+                        <p className={styles.box_text}>
+                            But we need your help to get fully operational, please get in touch with fundraising ideas or donations via the information below.
                         </p>
                     </div>
                 </div>
@@ -66,14 +70,19 @@ function App() {
                     <div className={styles.donate_inner}>
                         <div className={styles.message}>
                             <h1>How to help or donate</h1>
-                            <p>
-                                We depend on donations and are very grateful to all who give to us. By following us, donating and
-                                fundraising, you can help us make a change by helping our most vulnerable.
+                            <p className={styles.donate_message}>
+                                We depend on donations and are very grateful to all who give to us. By following us, donating and fundraising, you can help us make a change by helping our most vulnerable.
                             </p>
+                            <a href="https://www.paypal.me/JuliusLFoundation">
+                                <h2 className={styles.donate_link}>Donate to the Julius Little Foundation</h2>
+                            </a>
                         </div>
                         <div className={styles.two_panel}>
+                            <div className={styles.pad}>
+
+                            </div>
                             <div className={styles.contact}>
-                                <p>Please find us on:</p>
+                                <h1>Please find us on:</h1>
                                 <div className={styles.icon_link}>
                                     <InstagramIcon style={{paddingRight: '20px', 'font-size': '48px'}}/>
                                     <p><a href="https://www.instagram.com/thejuliuslittlefoundation/?hl=en">@thejuliuslittlefoundation</a></p>
@@ -89,8 +98,7 @@ function App() {
                                 <p>Registered charity Number 1186526.</p>
                             </div>
                             <div className={styles.donate}>
-                                <p>Please use the following PayPal link to provide donations.</p>
-                                <h3><a href="https://www.paypal.me/JuliusLFoundation">Donate to the Julius Little Foundation</a></h3>
+                                <img src={pic} className={styles.j_pic}/>
                             </div>
                         </div>
                     </div>

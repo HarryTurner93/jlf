@@ -1,23 +1,43 @@
+
+p {
+    font-family: 'Lora', serif;
+    font-weight: 500;
+    font-size: 80%;
+    color: rgba(30, 30, 30, 0.8);
+}
+
+h1 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 100%;
+    color: rgba(30, 30, 30, 0.8);
+}
+
+h2 {
+  font-family: 'Manrope', sans-serif;
+}
+
 .page {
-    width: 90%;
-    max-width: 1600px;
+    width: 480px;
     margin: auto;
 }
 
 .jumbotron {
     width: 100%;
-    padding-top: 100px;
+    height: 250px;
+    padding-top: 0px;
     padding-bottom: 100px;
     background-color: white;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-image: url("./jlf_poster.png");
+    background-size:100% 100%;
 }
 
 .hello {
-    width: 40%;
-    background-color: white;
+    width: 50%;
     text-align: left;
+    padding-top: 200px;
 }
 
 .logo {
@@ -32,15 +52,18 @@
 .box_panel {
     width: 100%;
     background-color: white;
+    padding-top: 5px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 
 .box {
-    width: 28%;
+    width: 100%;
     background-color: white;
-    height: 400px;
-    padding: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     text-align: left;
 }
 
@@ -48,9 +71,8 @@
     color: #303030;
 }
 .box_title {
-    color: rgba(200, 0, 0, 1.0);
+    color: rgba(0, 0, 0, 0.7);
 }
-
 
 .donate_inner {
     width: 100%;
@@ -59,27 +81,47 @@
     flex-direction: column;
 }
 
+.donate_message {
+    width: 60%;
+    margin: auto;
+}
+
+.donate_link {
+    padding-top: 25px;
+    font-size: 24px;
+}
+
 .donate_outer {
     width: 100%;
-    padding-top: 100px;
-    padding-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     background-color: white;
     display: flex;
     justify-content: space-around;
 }
 
 .message {
-    padding-bottom: 50px;
+    padding-bottom: 25px;
 }
 
 .contact {
-    width: 100%;
+    width: 50%;
     text-align: left;
+    padding-left: 0px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.pad {
+    width: 0%;
     background-color: white;
 }
 
 .donate {
-    width: 100%;
+    width: 50%;
     text-align: left;
     background-color: white;
 }
@@ -93,4 +135,295 @@
 .icon_link {
     display: flex;
     align-items: center;
+}
+
+.j_pic {
+    height: 300px;
+}
+
+
+@media screen and (min-width: 768px) {
+    p {
+        font-family: 'Lora', serif;
+        font-weight: 500;
+        font-size: 110%;
+        color: rgba(30, 30, 30, 0.8);
+    }
+
+    h1 {
+        font-family: 'Manrope', sans-serif;
+        font-size: 130%;
+        color: rgba(30, 30, 30, 0.8);
+    }
+
+    h2 {
+      font-family: 'Manrope', sans-serif;
+    }
+
+    .page {
+        width: 768px;
+        margin: auto;
+    }
+
+    .jumbotron {
+        width: 100%;
+        height: 400px;
+        padding-top: 70px;
+        padding-bottom: 100px;
+        background-color: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-image: url("./jlf_poster.png");
+        background-size:100% 100%;
+    }
+
+    .hello {
+        width: 40%;
+        text-align: left;
+        padding-top: 200px;
+    }
+
+    .logo {
+        width: 40%;
+        background-color: white;
+    }
+
+    .image {
+        width: 100%;
+    }
+
+    .box_panel {
+        width: 100%;
+        background-color: white;
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .box {
+        width: 100%;
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    .box_text {
+        color: #303030;
+    }
+    .box_title {
+        color: rgba(0, 0, 0, 0.7);
+    }
+
+
+    .donate_inner {
+        width: 100%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .donate_message {
+        width: 60%;
+        margin: auto;
+    }
+
+    .donate_link {
+        padding-top: 50px;
+        font-size: 32px;
+    }
+
+    .donate_outer {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: white;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .message {
+        padding-bottom: 25px;
+    }
+
+    .contact {
+        width: 45%;
+        text-align: left;
+        padding-left: 50px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .pad {
+        width: 5%;
+        background-color: white;
+    }
+
+    .donate {
+        width: 50%;
+        text-align: left;
+        background-color: white;
+    }
+
+    .two_panel {
+        width: 100%;
+        display: flex;
+        background-color: cadetblue;
+    }
+
+    .icon_link {
+        display: flex;
+        align-items: center;
+    }
+
+    .j_pic {
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    p {
+      font-family: 'Lora', serif;
+      font-weight: 500;
+      font-size: 130%;
+      color: rgba(30, 30, 30, 0.8);
+    }
+
+    h1 {
+        font-family: 'Manrope', sans-serif;
+        font-size: 200%;
+        color: rgba(30, 30, 30, 0.8);
+    }
+
+    h2 {
+      font-family: 'Manrope', sans-serif;
+    }
+
+    .page {
+        width: 1200px;
+        margin: auto;
+    }
+
+    .jumbotron {
+        width: 100%;
+        height: 700px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        background-color: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-image: url("./jlf_poster.png");
+        background-size:100% 100%;
+    }
+
+    .hello {
+        width: 40%;
+        text-align: left;
+        padding-top: 200px;
+    }
+
+    .logo {
+        width: 40%;
+        background-color: white;
+    }
+
+    .image {
+        width: 100%;
+    }
+
+    .box_panel {
+        width: 100%;
+        background-color: white;
+        padding-top: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .box {
+        width: 28%;
+        background-color: white;
+        padding: 20px;
+        text-align: left;
+    }
+
+    .box_text {
+        color: #303030;
+    }
+    .box_title {
+        color: rgba(0, 0, 0, 0.7);
+    }
+
+
+    .donate_inner {
+        width: 100%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .donate_message {
+        width: 60%;
+        margin: auto;
+    }
+
+    .donate_link {
+        padding-top: 50px;
+        font-size: 32px;
+    }
+
+    .donate_outer {
+        width: 100%;
+        padding-top: 100px;
+        padding-bottom: 50px;
+        background-color: white;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .message {
+        padding-bottom: 50px;
+    }
+
+    .contact {
+        width: 40%;
+        text-align: left;
+        padding-left: 50px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .pad {
+        width: 10%;
+        background-color: white;
+    }
+
+    .donate {
+        width: 50%;
+        text-align: left;
+        background-color: white;
+    }
+
+    .two_panel {
+        width: 100%;
+        display: flex;
+        background-color: cadetblue;
+    }
+
+    .icon_link {
+        display: flex;
+        align-items: center;
+    }
+    .j_pic {
+        height: 600px;
+    }
 }
