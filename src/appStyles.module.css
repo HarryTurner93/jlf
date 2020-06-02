@@ -343,7 +343,9 @@ h2 {
         background-color: white;
         padding-top: 50px;
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
+        align-items: stretch;
     }
 
     .box {
