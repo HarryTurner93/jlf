@@ -30,38 +30,38 @@ function App() {
                 </div>
                 <div className={styles.box_panel}>
                     <div className={styles.box} style={{backgroundColor: '#fbe5d6'}}>
-                        <h1 className={styles.box_title}>Our Story</h1>
-                        <p className={styles.box_text}>
+                        <h1>Our Story</h1>
+                        <p>
                             This charity has been set up in the memory of Julius Little; a caring, compassionate and perhaps most importantly to him an artist and fashion icon.
                         </p>
-                        <p className={styles.box_text}>
+                        <p>
                             Julius himself suffered with anxiety and depression and sadly took his own life in June 2019, aged 20.
                         </p>
-                        <p className={styles.box_text}>
+                        <p>
                             His family created the foundation in order to help those struggling with mental illness just like Julius did.
                         </p>
                     </div>
                     <div className={styles.box} style={{backgroundColor: '#dae3f3'}}>
-                        <h1 className={styles.box_title}>Our Mission</h1>
-                        <p className={styles.box_text}>
+                        <h1>Our Mission</h1>
+                        <p>
                             The statistics are bleak, I in 4 of us will suffer with a mental health problem this year and there are not currently enough resources available to help each of us.
                         </p>
-                        <p className={styles.box_text}>
+                        <p>
                             Our young people face more and more challenges to their mental health and not everyone is receiving the support they need.
                         </p>
-                        <p className={styles.box_text}>
+                        <p>
                             We are here to help by providing young people a free, confidential, safe space to explore and discuss any troubles with trained mental health professionals.
                         </p>
                     </div>
                     <div className={styles.box} style={{backgroundColor: '#e1e6ea'}}>
-                        <h1 className={styles.box_title}>Our Progress</h1>
-                        <p className={styles.box_text}>
+                        <h1>Our Progress</h1>
+                        <p>
                             The support we have received so far has been amazing! We thank everyone who has donated or given up their time fundraising and volunteering!
                         </p>
-                        <p className={styles.box_text}>
+                        <p>
                             Almost a year has passed since loosing our beloved Julius and we have achieved so much during this difficult time.
                         </p>
-                        <p className={styles.box_text}>
+                        <p>
                             But we need your help to get fully operational, please get in touch with fundraising ideas or donations via the information below.
                         </p>
                     </div>
@@ -84,15 +84,15 @@ function App() {
                             <div className={styles.contact}>
                                 <h1>Please find us on:</h1>
                                 <div className={styles.icon_link}>
-                                    <InstagramIcon style={{paddingRight: '20px', 'font-size': '48px'}}/>
+                                    <InstagramIcon className={styles.social_icon}/>
                                     <p><a href="https://www.instagram.com/thejuliuslittlefoundation/?hl=en">@thejuliuslittlefoundation</a></p>
                                 </div>
                                 <div className={styles.icon_link}>
-                                    <FacebookIcon color="primary" style={{paddingRight: '20px', 'font-size': '48px'}}/>
+                                    <FacebookIcon color="primary" className={styles.social_icon}/>
                                     <p><a href="https://www.facebook.com/thejuliuslittlefoundation">The Julius Little Foundation</a></p>
                                 </div>
                                 <div className={styles.icon_link}>
-                                    <MailOutlineIcon style={{paddingRight: '20px', 'font-size': '48px'}}/>
+                                    <MailOutlineIcon className={styles.social_icon}/>
                                     <p>thejuliuslittlefoundation@hotmail.com</p>
                                 </div>
                                 <p>Registered charity Number 1186526.</p>

@@ -1,14 +1,13 @@
-
 p {
     font-family: 'Lora', serif;
     font-weight: 500;
-    font-size: 80%;
+    font-size: 60%;
     color: rgba(30, 30, 30, 0.8);
 }
 
 h1 {
     font-family: 'Manrope', sans-serif;
-    font-size: 100%;
+    font-size: 60%;
     color: rgba(30, 30, 30, 0.8);
 }
 
@@ -17,16 +16,16 @@ h2 {
 }
 
 .page {
-    width: 480px;
+    width: 320px;
     margin: auto;
+    background-color: white;
 }
 
 .jumbotron {
     width: 100%;
-    height: 250px;
-    padding-top: 0px;
+    height: 90px;
+    padding-top: 70px;
     padding-bottom: 100px;
-    background-color: white;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -35,13 +34,13 @@ h2 {
 }
 
 .hello {
-    width: 50%;
+    width: 55%;
     text-align: left;
-    padding-top: 200px;
+    padding-top: 120px;
 }
 
 .logo {
-    width: 40%;
+    width: 30%;
     background-color: white;
 }
 
@@ -51,8 +50,7 @@ h2 {
 
 .box_panel {
     width: 100%;
-    background-color: white;
-    padding-top: 5px;
+    padding-top: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -60,9 +58,9 @@ h2 {
 
 .box {
     width: 100%;
-    background-color: white;
     padding: 10px;
-    margin-top: 10px;
+    box-sizing: border-box;
+    margin-top: 5px;
     margin-bottom: 10px;
     text-align: left;
 }
@@ -74,9 +72,9 @@ h2 {
     color: rgba(0, 0, 0, 0.7);
 }
 
+
 .donate_inner {
     width: 100%;
-    background-color: white;
     display: flex;
     flex-direction: column;
 }
@@ -87,14 +85,14 @@ h2 {
 }
 
 .donate_link {
-    padding-top: 25px;
-    font-size: 24px;
+    padding-top: 20px;
+    font-size: 14px;
 }
 
 .donate_outer {
     width: 100%;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     background-color: white;
     display: flex;
     justify-content: space-around;
@@ -105,25 +103,33 @@ h2 {
 }
 
 .contact {
-    width: 50%;
+    width: 70%;
     text-align: left;
-    padding-left: 0px;
+    padding-left: 10px;
     background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    overflow-wrap: break-word;
 }
 
 .pad {
-    width: 0%;
+    width: 0;
     background-color: white;
 }
 
+.social_icon {
+    padding-right: 5px;
+    font-size: 48px;
+}
+
 .donate {
-    width: 50%;
+    width: 30%;
     text-align: left;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .two_panel {
@@ -135,12 +141,12 @@ h2 {
 .icon_link {
     display: flex;
     align-items: center;
+    overflow-wrap: break-word;
 }
 
 .j_pic {
-    height: 300px;
+    width: 100%;
 }
-
 
 @media screen and (min-width: 768px) {
     p {
@@ -163,6 +169,7 @@ h2 {
     .page {
         width: 768px;
         margin: auto;
+        background-color: white;
     }
 
     .jumbotron {
@@ -170,7 +177,6 @@ h2 {
         height: 400px;
         padding-top: 70px;
         padding-bottom: 100px;
-        background-color: white;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -195,7 +201,6 @@ h2 {
 
     .box_panel {
         width: 100%;
-        background-color: white;
         padding-top: 20px;
         display: flex;
         flex-direction: column;
@@ -204,8 +209,8 @@ h2 {
 
     .box {
         width: 100%;
-        background-color: white;
         padding: 20px;
+        box-sizing: border-box;
         margin-top: 20px;
         margin-bottom: 20px;
         text-align: left;
@@ -218,10 +223,13 @@ h2 {
         color: rgba(0, 0, 0, 0.7);
     }
 
+    .social_icon {
+        padding-right: 20px;
+        font-size: 48px;
+    }
 
     .donate_inner {
         width: 100%;
-        background-color: white;
         display: flex;
         flex-direction: column;
     }
@@ -250,40 +258,49 @@ h2 {
     }
 
     .contact {
-        width: 45%;
+        width: 50%;
         text-align: left;
-        padding-left: 50px;
+        padding-left: 10px;
         background-color: white;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: flex-start;
+        overflow-wrap: break-word;
     }
 
     .pad {
-        width: 5%;
+        width: 10%;
         background-color: white;
     }
 
+    .social_icon {
+        padding-right: 5px;
+        font-size: 48px;
+    }
+
     .donate {
-        width: 50%;
+        width: 30%;
         text-align: left;
         background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .two_panel {
         width: 100%;
         display: flex;
-        background-color: cadetblue;
+        background-color: white;
     }
 
     .icon_link {
         display: flex;
         align-items: center;
+        overflow-wrap: break-word;
     }
 
     .j_pic {
-        height: 400px;
+        width: 100%;
     }
 }
 
@@ -341,7 +358,7 @@ h2 {
     .box_panel {
         width: 100%;
         background-color: white;
-        padding-top: 50px;
+        padding-top: 25px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -349,19 +366,12 @@ h2 {
     }
 
     .box {
-        width: 28%;
+        width: 31%;
         background-color: white;
+        box-sizing: border-box;
         padding: 20px;
         text-align: left;
     }
-
-    .box_text {
-        color: #303030;
-    }
-    .box_title {
-        color: rgba(0, 0, 0, 0.7);
-    }
-
 
     .donate_inner {
         width: 100%;
@@ -374,6 +384,12 @@ h2 {
         width: 60%;
         margin: auto;
     }
+
+     .social_icon {
+        padding-right: 20px;
+        font-size: 48px;
+     }
+
 
     .donate_link {
         padding-top: 50px;
@@ -394,38 +410,48 @@ h2 {
     }
 
     .contact {
-        width: 40%;
+        width: 35%;
         text-align: left;
-        padding-left: 50px;
+        padding-left: 10px;
         background-color: white;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: flex-start;
+        overflow-wrap: break-word;
     }
 
     .pad {
-        width: 10%;
+        width: 20%;
         background-color: white;
     }
 
+    .social_icon {
+        padding-right: 5px;
+        font-size: 48px;
+    }
+
     .donate {
-        width: 50%;
+        width: 30%;
         text-align: left;
         background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .two_panel {
         width: 100%;
         display: flex;
-        background-color: cadetblue;
+        background-color: white;
     }
 
     .icon_link {
         display: flex;
         align-items: center;
+        overflow-wrap: break-word;
     }
+
     .j_pic {
-        height: 600px;
+        width: 100%;
     }
 }
