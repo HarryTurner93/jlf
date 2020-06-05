@@ -169,6 +169,7 @@ h2 {
 
 .donate_button a {
     color: white;
+    display: block;
     text-decoration: none;
     font-weight: 700;
     font-size: 16px;
@@ -350,6 +351,7 @@ h2 {
 
     .donate_button a {
         color: white;
+        display: block;
         text-decoration: none;
         font-weight: 700;
         font-size: 24px;
