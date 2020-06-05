@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import styles from './appStyles.module.css';
 import './App.css';
 import Iframe from 'react-iframe'
@@ -8,6 +9,7 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 
 import pic from './j_pic.png';
+
 
 function App() {
     return (
@@ -73,9 +75,15 @@ function App() {
                             <p className={styles.donate_message}>
                                 We depend on donations and are very grateful to all who give to us. By following us, donating and fundraising, you can help us make a change by helping our most vulnerable.
                             </p>
-                            <a href="https://www.paypal.me/JuliusLFoundation">
-                                <h2 className={styles.donate_link}>Donate to the Julius Little Foundation</h2>
-                            </a>
+                            <div className={styles.checkout}>
+                                <Iframe url="https://juliuslittlefoundation.charitycheckout.co.uk/donate"
+                                         width="100%"
+                                         height="1000px"
+                                         display="initial"
+                                         position="relative"
+                                        frameBorder="0"
+                                 />
+                            </div>
                         </div>
                         <div className={styles.two_panel}>
                             <div className={styles.pad}>
@@ -107,6 +115,7 @@ function App() {
         </div>
     );
 }
+
 
 //<Iframe url="https://www.youtube.com/embed/xDMP3i36naA"
 //                                         width="100%"
