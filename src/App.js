@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import styles from './appStyles.module.css';
 import './App.css';
+import { useMediaQuery } from 'react-responsive'
 import Iframe from 'react-iframe'
 
 import FacebookIcon from '@material-ui/icons/Facebook';
@@ -12,6 +13,25 @@ import pic from './j_pic.png';
 
 
 function App() {
+
+    const isDesktopOrLaptop = useMediaQuery({ minWidth: 1200 })
+
+    let donate = <div className={styles.donate_button}>
+        <a href="https://juliuslittlefoundation.charitycheckout.co.uk/donate">Donate</a>
+    </div>
+    if (isDesktopOrLaptop) {
+
+        donate = <div className={styles.checkout}>
+                    <Iframe url="https://juliuslittlefoundation.charitycheckout.co.uk/donate"
+                             width="100%"
+                             height="1000px"
+                             display="initial"
+                             position="relative"
+                            frameBorder="0"
+                     />
+                </div>
+    }
+
     return (
         <div className="App">
             <div className={styles.page}>
@@ -75,15 +95,7 @@ function App() {
                             <p className={styles.donate_message}>
                                 We depend on donations and are very grateful to all who give to us. By following us, donating and fundraising, you can help us make a change by helping our most vulnerable.
                             </p>
-                            <div className={styles.checkout}>
-                                <Iframe url="https://juliuslittlefoundation.charitycheckout.co.uk/donate"
-                                         width="100%"
-                                         height="1000px"
-                                         display="initial"
-                                         position="relative"
-                                        frameBorder="0"
-                                 />
-                            </div>
+                            {donate}
                         </div>
                         <div className={styles.two_panel}>
                             <div className={styles.pad}>
